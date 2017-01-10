@@ -1,0 +1,14 @@
+SELECT * FROM Customers
+
+WHERE country = 'Germany'
+
+SELECT * FROM [OrderDetails]
+where quantity >10
+
+SELECT A.customerID, count (B.orderID)
+FROM Customers A, Orders B
+WHERE A.customerID = B.customerID
+group by A.customerID
+ORDER by A.customerID
+
+Piotr Skrzyñski
